@@ -8,3 +8,5 @@ sudo cp config/php.ini /etc/php/php.ini
 
 echo "### restarting http daemon ###"
 sudo systemctl restart httpd
+
+cd /vagrant
