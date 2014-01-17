@@ -10,4 +10,11 @@ echo "### making package ###"
 cd php-composer
 makepkg
 
+echo "### installing composer package ###"
+sudo pacman -U `ls | grep php-composer`
+
+echo "### cleaning up ###"
+cd ..
+rm -rf php-composer
+
 cd /vagrant
