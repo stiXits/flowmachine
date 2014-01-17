@@ -1,5 +1,5 @@
 #!/usr/bin/expect --
-spawn /usr/local/mysql/bin/mysql_secure_installation
+spawn mysql_secure_installation
 
 expect "Enter current password for root (enter for none):"
 send "\r"
@@ -8,10 +8,10 @@ expect "Set root password?"
 send "y\r"
 
 expect "New password:"
-send "password\r"
+send "toor\r"
 
 expect "Re-enter new password:"
-send "password\r"
+send "toor\r"
 
 expect "Remove anonymous users?"
 send "y\r"
