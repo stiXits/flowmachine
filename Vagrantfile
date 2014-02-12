@@ -18,7 +18,4 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.provision :shell, :path => "bootstrap.sh"
 
-  config.vm.synced_folder "http/flow/", "/vagrant/http/flow",
-    owner: "http", group: "http"
-
 end
