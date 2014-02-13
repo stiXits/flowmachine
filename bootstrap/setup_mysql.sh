@@ -15,7 +15,7 @@ echo "### user: root passwd: toor ###"
 echo "### user: flow passwd: flow ###"
 
 echo "### establishing mysql standard configuration ###"
-mysql -u root -ppassword < config/mysql_standard_configuration.sql
+mysql -u root -ptoor < config/mysql_standard_configuration.sql
 
 echo "### restarting daemon ###"
 sudo systemctl restart mysqld

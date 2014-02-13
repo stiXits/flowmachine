@@ -15,4 +15,6 @@ cp /vagrant/bootstrap/config/Settings.yaml Configuration/Development
 echo "### running rights script ###"
 sudo ./flow core:setfilepermissions vagrant http http
 
+sudo systemctl start httpd
+
 cd /vagrant

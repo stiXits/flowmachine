@@ -11,7 +11,7 @@ cd php-composer
 makepkg
 
 echo "### installing composer package ###"
-sudo pacman -U `ls | grep php-composer`
+sudo pacman -U `ls | grep php-composer` --noconfirm
 
 echo "### cleaning up ###"
 cd ..
