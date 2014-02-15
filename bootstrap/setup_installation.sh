@@ -3,3 +3,6 @@ sudo pacman -Syu --noconfirm
 
 echo "### installing startup packages ###"
 sudo pacman -S base-devel apache php php-apache mariadb expect git htop --noconfirm
+
+echo "### freeing space by clearing pacman space ###"
+sudo pacman -Scc --noconfirm
