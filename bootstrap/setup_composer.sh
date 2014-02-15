@@ -8,7 +8,7 @@ rm php-composer.tar.gz
 
 echo "### making package ###"
 cd php-composer
-makepkg
+sudo -u vagrant makepkg
 
 echo "### installing composer package ###"
 sudo pacman -U `ls | grep php-composer` --noconfirm
