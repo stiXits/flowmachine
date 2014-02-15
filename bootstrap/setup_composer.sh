@@ -2,9 +2,9 @@ cd /vagrant
 
 #install composer
 echo "### retrieving composer package from AUR ###"
-wget https://aur.archlinux.org/packages/ph/php-composer/php-composer.tar.gz
-tar -xf php-composer.tar.gz
-rm php-composer.tar.gz
+sudo -u wget https://aur.archlinux.org/packages/ph/php-composer/php-composer.tar.gz
+sudo -u tar -xf php-composer.tar.gz
+sudo -u rm php-composer.tar.gz
 
 echo "### making package ###"
 cd php-composer
@@ -15,6 +15,6 @@ sudo pacman -U `ls | grep php-composer` --noconfirm
 
 echo "### cleaning up ###"
 cd ..
-rm -rf php-composer
+sudo -u rm -rf php-composer
 
 cd /vagrant
