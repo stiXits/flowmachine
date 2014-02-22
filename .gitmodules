@@ -1,0 +1,3 @@
+[submodule "librerie"]
+	path = librerie
+	url = librerie@code.hpi.uni-potsdam.de:librerie.git
