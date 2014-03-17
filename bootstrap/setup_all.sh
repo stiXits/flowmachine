@@ -5,6 +5,7 @@ cd /vagrant/bootstrap
 ./setup_apache.sh
 ./setup_php.sh
 ./setup_mysql.sh
+./setup_xhprof.sg
 
 ./setup_composer.sh
 
