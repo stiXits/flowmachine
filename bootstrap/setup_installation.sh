@@ -2,7 +2,7 @@ echo "### performing full system upgrade ###"
 sudo pacman -Syu --noconfirm
 
 echo "### installing startup packages ###"
-sudo pacman -S base-devel apache php php-apache php-xsl mariadb expect git htop mlocate yaourt --noconfirm
+sudo pacman -S base-devel apache php php-apache php-xsl mariadb expect git htop iotop mlocate yaourt --noconfirm
 
 sudo updatedb
 
