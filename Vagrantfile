@@ -16,6 +16,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     vb.customize ["modifyvm", :id, "--cpus", "4"]
   end
 
+  config.vm.provider :virtualbox do |vb|
+    vb.gui = true
+  end
+
   config.vm.provision :shell, :path => "bootstrap.sh"
 
 end
